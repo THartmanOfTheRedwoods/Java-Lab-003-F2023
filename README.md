@@ -54,8 +54,8 @@ If it were 2°C warmer it would be: 12.000000°C
 
 ### Part 3 - Submission
 * Make sure you've commented your code.
-* Make sure you've created your Spring2023 feature branch.
+* Make sure you've created your feature branch.
 * Commit your locally functional code.
 * Push it to your Remote/origin branch (i.e. GitHub).
-* Then issue a Pull request to the instructor branch that your forked from.
+* Then issue a Pull request to the instructor repo that your forked from.
     * Make sure to save the Pull request URL and submit it for the lab in Canvas.
