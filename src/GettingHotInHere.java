@@ -10,32 +10,42 @@ public class GettingHotInHere {
      * @since Version 1.0
      **/
     public static void main(String[] args) {
-        // The instantiation code for a Scanner instance.
         Scanner scanner = new Scanner(System.in);
-        System.out.print("What is the temperature in °F: ");            //User prompt
-        int number = scanner.nextInt();                                 //User input. change var name to fahrenheitDegree
 
-        //declare variable for celciusDegree
+//Declare variables
+        String scriptPrompt = "What is the temperature in °F: ";
+        String scriptDegreeInt = "%d°%s%n";
+        String scriptFaren = "F";
+        String scriptCelci = "C";
+        String scriptDegreeDouble = "%.6f°F%n";
+        String scriptIfWarmer = "If it were 2°C warmer it would be: %.6f°C";
 
-        //do float math and assign to celciusDegree
 
-        //
+//What is the temperature in °F: 50
+        System.out.printf(scriptPrompt);            //User prompt
+        int userInt = scanner.nextInt();            //int assignment from user input
+        double userDouble = userInt;                //implicit type casting from int to double
+
+//print         50°F
+        System.out.printf(scriptDegreeInt, userInt, scriptFaren);
+
+//declare variable for celciusDegree
+//°C = (X°F - 32) x (5/9)
+        double celciusDegree = (userDouble - 32.0) * (5/9.0);
+
+//print         10.000000°C
+        System.out.printf(scriptDegreeDouble, celciusDegree);
+//10°C
+        System.out.printf(scriptDegreeInt, (int) celciusDegree, scriptCelci);
+
+//print         If it were 2°C warmer it would be: 12.000000°C
+        //System.out.printf(scriptIfWarmer, );
+
+
     }
 }
 
 /*
-The function for conversion is: Y°C = (X°F - 32) x (5/9)
-
-After you've converted the temperature, print out the following:
-
-The X°F the user typed
-The Y°C you converted as a floating point number
-The Y°C as an integer
-
-The String "If it were 2°C warmer it would be: 2 + Y°C" (Do the calculation and concatenation)
-
-Output should like something like below for 50°F
-
 What is the temperature in °F: 50
 50°F
 10.000000°C
