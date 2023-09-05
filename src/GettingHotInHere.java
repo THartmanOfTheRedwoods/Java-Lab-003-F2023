@@ -20,38 +20,16 @@ public class GettingHotInHere {
         String scriptCelci = "C";
         String scriptIfWarmer = "If it were 2°C warmer it would be: %.6f°C";
 
-
-//What is the temperature in °F: 50
-        System.out.printf(scriptPrompt);            //User prompt
+        System.out.printf(scriptPrompt);            //What is the temperature in °F: 50
         int userInt = scanner.nextInt();            //int assignment from user input
         double userDouble = userInt;                //implicit type casting from int to double
 
-//print         50°F
-        System.out.printf(scriptDegreeInt, userInt, scriptFaren);
+        System.out.printf(scriptDegreeInt, userInt, scriptFaren);       //print         50°F
 
-//temp math
         double celciusDegree = ( (double) userInt - 32.0) * (5.0/9.0);           //°C = (X°F - 32) x (5/9)
 
-//print         10.000000°C
-        //System.out.printf(scriptDegreeDouble, celciusDegree);
-        //System.out.printf(scriptDegreeInt, userInt, scriptFaren);         //modify scriptDegreeInt
-
-//10°C
-        System.out.printf(scriptDegreeInt, (int) celciusDegree, scriptCelci);
-        System.out.printf(scriptDegreeDouble, celciusDegree, scriptCelci);         //modify scriptDegreeInt
-
-
-//print         If it were 2°C warmer it would be: 12.000000°C
-        System.out.printf(scriptIfWarmer, celciusDegree + 2);
-
-
+        System.out.printf(scriptDegreeInt, (int) celciusDegree, scriptCelci);       //10°C
+        System.out.printf(scriptDegreeDouble, celciusDegree, scriptCelci);         //10.000000°C
+        System.out.printf(scriptIfWarmer, celciusDegree + 2);       //If it were 2°C warmer it would be: 12.000000°C
     }
 }
-
-/*
-What is the temperature in °F: 50
-50°F
-10.000000°C
-10°C
-If it were 2°C warmer it would be: 12.000000°C
- */
