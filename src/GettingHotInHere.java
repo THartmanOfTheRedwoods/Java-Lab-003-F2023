@@ -15,9 +15,9 @@ public class GettingHotInHere {
 //Declare variables
         String scriptPrompt = "What is the temperature in °F: ";
         String scriptDegreeInt = "%d°%s%n";
+        String scriptDegreeDouble = "%f°%s%n";
         String scriptFaren = "F";
         String scriptCelci = "C";
-        String scriptDegreeDouble = "%.6f°F%n";
         String scriptIfWarmer = "If it were 2°C warmer it would be: %.6f°C";
 
 
@@ -29,17 +29,20 @@ public class GettingHotInHere {
 //print         50°F
         System.out.printf(scriptDegreeInt, userInt, scriptFaren);
 
-//declare variable for celciusDegree
-//°C = (X°F - 32) x (5/9)
-        double celciusDegree = (userDouble - 32.0) * (5/9.0);
+//temp math
+        double celciusDegree = ( (double) userInt - 32.0) * (5.0/9.0);           //°C = (X°F - 32) x (5/9)
 
 //print         10.000000°C
-        System.out.printf(scriptDegreeDouble, celciusDegree);
+        //System.out.printf(scriptDegreeDouble, celciusDegree);
+        //System.out.printf(scriptDegreeInt, userInt, scriptFaren);         //modify scriptDegreeInt
+
 //10°C
         System.out.printf(scriptDegreeInt, (int) celciusDegree, scriptCelci);
+        System.out.printf(scriptDegreeDouble, celciusDegree, scriptCelci);         //modify scriptDegreeInt
+
 
 //print         If it were 2°C warmer it would be: 12.000000°C
-        //System.out.printf(scriptIfWarmer, );
+        System.out.printf(scriptIfWarmer, celciusDegree + 2);
 
 
     }
