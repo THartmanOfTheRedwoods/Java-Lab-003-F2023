@@ -20,16 +20,15 @@ public class GettingHotInHere {
         String scriptCelci = "C";
         String scriptIfWarmer = "If it were 2°C warmer it would be: %.6f°C";
 
-        System.out.printf(scriptPrompt);            //What is the temperature in °F: 50
-        int userInt = scanner.nextInt();            //int assignment from user input
-        double userDouble = userInt;                //implicit type casting from int to double
+        System.out.printf(scriptPrompt);
+        int userInt = scanner.nextInt();
 
-        System.out.printf(scriptDegreeInt, userInt, scriptFaren);       //print         50°F
+        System.out.printf(scriptDegreeInt, userInt, scriptFaren);
 
-        double celciusDegree = ( (double) userInt - 32.0) * (5.0/9.0);           //°C = (X°F - 32) x (5/9)
+        double celciusDegree = ( (double) userInt - 32.0) * (5.0/9.0);
 
-        System.out.printf(scriptDegreeInt, (int) celciusDegree, scriptCelci);       //10°C
-        System.out.printf(scriptDegreeDouble, celciusDegree, scriptCelci);         //10.000000°C
-        System.out.printf(scriptIfWarmer, celciusDegree + 2);       //If it were 2°C warmer it would be: 12.000000°C
+        System.out.printf(scriptDegreeInt, (int) celciusDegree, scriptCelci);
+        System.out.printf(scriptDegreeDouble, celciusDegree, scriptCelci);
+        System.out.printf(scriptIfWarmer, celciusDegree + 2);
     }
 }
