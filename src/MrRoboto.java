@@ -12,31 +12,16 @@ public class MrRoboto {
      **/
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);                            //UserString prompt in
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("What is your name?");
         String userName = scanner.nextLine();
 
-        String domo = "Domo arigato ";                                          //String scripts
+        String domo = "Domo arigato ";
         String nameMrRoboto = "My name is Mr. Roboto, are you Kilroy? ";
         String stan = "no, I'm %s";
 
         System.out.println(nameMrRoboto + String.format(stan, userName));
         System.out.println(domo + String.format(stan, userName));
-
-        /*
-        My name is Mr. Roboto, are you Kilroy? no, I'm stan
-        Domo arigato no, I'm stan
-         */
-
     }
 }
-
-/*
-
-After the enter key is pressed, your program should print the string typed by the user, initially you, concatenated to the String variable domo.
-
-See Oracle's Scanner Javadoc to read all the data types Scanner can read (You want to read a String)
-
-Hint: you're looking for a method -> nextLine
- */
