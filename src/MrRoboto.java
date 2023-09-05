@@ -12,10 +12,10 @@ public class MrRoboto {
      **/
     public static void main(String[] args) {
 
-        Scanner userString = new Scanner(System.in);                            //UserString prompt in
+        Scanner scanner = new Scanner(System.in);                            //UserString prompt in
 
         System.out.println("What is your name?");
-        String userName = userString.nextLine();
+        String userName = scanner.nextLine();
 
         String domo = "Domo arigato ";                                          //String scripts
         String nameMrRoboto = "My name is Mr. Roboto, are you Kilroy? ";
