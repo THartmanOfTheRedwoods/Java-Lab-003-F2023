@@ -12,7 +12,6 @@ public class GettingHotInHere {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-//Declare variables
         String scriptPrompt = "What is the temperature in °F: ";
         String scriptDegreeInt = "%d°%s%n";
         String scriptDegreeDouble = "%f°%s%n";
