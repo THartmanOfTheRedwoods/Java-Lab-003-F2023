@@ -15,8 +15,8 @@ public class GettingHotInHere {
         y = (number - 32.0) * 5.0 / 9.0;
         System.out.println(y+"°C");
         double x = y +2.0;
-        int z = (int) y;
-        System.out.println(z+"°C");
+        int f = (int) y;
+        System.out.println(f+"°C");
         System.out.println("If it were 2°C warmer it would be "+ x +"°C");
     }
 }
