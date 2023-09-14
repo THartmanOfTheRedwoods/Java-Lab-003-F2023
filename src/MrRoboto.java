@@ -9,11 +9,16 @@ public class MrRoboto {
     public static void main(String[] args) {
         // The instantiation code for a Scanner instance.
         Scanner scanner = new Scanner(System.in);
-
         // Concatenate the user response to this String.
-        String domo = "Domo arigato ";
-
-        System.out.print("My name is Mr. Roboto, are you Kilroy? ");
+        String myName = scanner.nextLine();
         // Write your program here
+
+
+String ddomo = ("My name is Mr. Roboto, are you Kilroy? no, I'm stan ");
+
+String ari = ("Domo arigato no, I'm stan");
+
+        System.out.println(ddomo+"\n"+ari);
+        System.out.println(myName);
     }
 }
