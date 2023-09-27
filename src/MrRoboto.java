@@ -15,5 +15,7 @@ public class MrRoboto {
 
         System.out.print("My name is Mr. Roboto, are you Kilroy? ");
         // Write your program here
+        String name = scanner.nextLine(); // Get user input for name
+        System.out.println(domo + name); // Print concatenated strings
     }
 }
