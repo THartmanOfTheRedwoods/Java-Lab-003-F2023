@@ -11,9 +11,13 @@ public class MrRoboto {
         Scanner scanner = new Scanner(System.in);
 
         // Concatenate the user response to this String.
-        String domo = "Domo arigato ";
+        String domo = "  Domo arigato ";
 
         System.out.print("My name is Mr. Roboto, are you Kilroy? ");
         // Write your program here
+       String line1 = scanner.nextLine();
+        System.out.println(domo+line1);
+
+
     }
 }
