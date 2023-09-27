@@ -1,6 +1,8 @@
 // Import the Scanner tool used for reading (All external packages/libraries/apis are imported similarly this)
 import java.util.Scanner;
 
+import static java.lang.System.in;
+
 public class MrRoboto {
     /**
      * Teaching Mr. Roboto how to listen to us.
@@ -8,12 +10,17 @@ public class MrRoboto {
      **/
     public static void main(String[] args) {
         // The instantiation code for a Scanner instance.
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(in);
 
         // Concatenate the user response to this String.
         String domo = "Domo arigato ";
 
         System.out.print("My name is Mr. Roboto, are you Kilroy? ");
         // Write your program here
+
+        String tf = scanner.nextLine();
+
+        System.out.println(domo + tf);
+
     }
 }
