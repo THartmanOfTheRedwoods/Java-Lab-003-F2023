@@ -8,12 +8,15 @@ public class MrRoboto {
      **/
     public static void main(String[] args) {
         // The instantiation code for a Scanner instance.
-        Scanner scanner = new Scanner(System.in);
+       Scanner  sc = new Scanner(System.in);
+       String sc1 = "My name is Mr. Roboto, are you Kilroy?";
+        System.out.println(sc1);
+       System.out.println (sc.nextLine());
+       String value = "Domo Arigato";
+        System.out.println(sc1 + value);
+        
+        
 
-        // Concatenate the user response to this String.
-        String domo = "Domo arigato ";
-
-        System.out.print("My name is Mr. Roboto, are you Kilroy? ");
-        // Write your program here
+        // It worked better in class, Im not sure what else I can do here.
     }
 }
