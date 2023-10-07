@@ -14,6 +14,6 @@ public class MrRoboto {
         String domo = "Domo arigato ";
 
         System.out.print("My name is Mr. Roboto, are you Kilroy? ");
-        // Write your program here
+        //omo Origato no, I'm Stan Write your program here;
     }
 }
